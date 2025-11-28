@@ -5,6 +5,13 @@ This is a responsive web application for an online shopping site featuring a com
 
 **Live Link:** [Insert your GitHub Pages Link Here]
 
+## 🔑 Admin Credentials (For Testing)
+To view the **Admin Dashboard** (Add/Delete Products), please use these credentials:
+* **Email:** `admin@gmail.com`
+* **Password:** `admin123`
+
+---
+
 ## 🛠 Tech Stack
 * **Frontend Framework:** Bootstrap 5 (Grid, Navbar, Layouts)
 * **UI Design:** Material Design (Cards, Shadows, Floating Inputs)
@@ -24,7 +31,7 @@ This is a responsive web application for an online shopping site featuring a com
 * **Purpose:** Authenticates users before accessing the shop.
 * **Logic:**
     * Compares input credentials against stored users in LocalStorage.
-    * **Admin Access:** Hardcoded admin check (`admin@gmail.com`) redirects to the Admin view.
+    * **Admin Access:** Checks for hardcoded admin credentials and redirects to the Admin view.
     * **Session Management:** Stores the logged-in user state in `localStorage` to persist sessions.
 
 ### 3. Shop Page (`shop.html`) - READ Operation
@@ -50,9 +57,3 @@ This is a responsive web application for an online shopping site featuring a com
     * `box-shadow` CSS overrides for card elevation.
     * Floating labels in forms (`form-floating`).
     * Ripple-effect buttons.
-
-## 🔐 Login Workflow
-1.  User registers -> Data saved to `users` array.
-2.  User logs in -> System validates credentials.
-3.  On success -> User object saved to `loggedInUser` key in LocalStorage.
-4.  Pages check `loggedInUser` on load; if null, redirects to Login.
