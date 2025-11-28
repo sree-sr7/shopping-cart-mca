@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeShop - Premium Online Shopping</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="material-icons align-middle">shopping_bag</span> LuxeShop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-center" id="authLinks">
+                    <!-- Auth links will be injected here by auth.js -->
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="cart.html">
+                            <span class="material-icons">shopping_cart</span>
+                            <span id="cartCount"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="display: none;">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="adminLink" style="display: none;">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">Elevate Your Lifestyle</h1>
+                    <p class="hero-subtitle">Experience the pinnacle of quality with our curated collection of premium
+                        products designed for the modern connoisseur.</p>
+                    <a href="shop.html" class="btn btn-primary btn-lg px-5 py-3 shadow-lg">Start Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mb-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4 border-0">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <span class="material-icons text-primary-custom"
+                                style="font-size: 3.5rem;">local_shipping</span>
+                        </div>
+                        <h3 class="card-title">Global Shipping</h3>
+                        <p class="card-text">We deliver to over 100 countries with tracked and insured shipping.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4 border-0">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <span class="material-icons text-primary-custom"
+                                style="font-size: 3.5rem;">verified_user</span>
+                        </div>
+                        <h3 class="card-title">Authenticity Guaranteed</h3>
+                        <p class="card-text">Every item is rigorously checked by our experts to ensure 100%
+                            authenticity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4 border-0">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <span class="material-icons text-primary-custom"
+                                style="font-size: 3.5rem;">headset_mic</span>
+                        </div>
+                        <h3 class="card-title">Premium Support</h3>
+                        <p class="card-text">Our dedicated concierge team is available 24/7 to assist you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a class="navbar-brand mb-3 d-block" href="index.html">
+                        <span class="material-icons align-middle">shopping_bag</span> LuxeShop
+                    </a>
+                    <p class="text-muted">redefining the online shopping experience with quality, style, and exceptional
+                        service.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Shop</h5>
+                    <a href="shop.html" class="footer-link">All Products</a>
+                    <a href="#" class="footer-link">New Arrivals</a>
+                    <a href="#" class="footer-link">Best Sellers</a>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Support</h5>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">FAQs</a>
+                    <a href="#" class="footer-link">Shipping Info</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="text-muted mb-3">Subscribe for exclusive offers and updates.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top">
+                <p class="text-muted mb-0">&copy; 2023 LuxeShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
