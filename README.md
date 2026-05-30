@@ -3,8 +3,6 @@
 ## Project Overview
 This is a responsive web application for an online shopping site featuring a complete user authentication system (Login/Register), an Admin Dashboard for product management, and a dynamic shopping cart. The project utilizes **Bootstrap 5** for layout and **Material Design** principles for UI aesthetics.
 
-**Live Link:** [Insert your GitHub Pages Link Here]
-
 ## 🔑 Admin Credentials (For Testing)
 To view the **Admin Dashboard** (Add/Delete Products), please use these credentials:
 * **Email:** `admin@gmail.com`
